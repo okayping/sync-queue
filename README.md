@@ -1,6 +1,10 @@
 ### SyncQueue
 A simple, goroutine-safe, sync queue for Go
 
+### Installation
+
+    go get github.com/okayping/sync-queue
+
 ### Example:
 ```golang
 package main
