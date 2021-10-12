@@ -77,7 +77,7 @@ func (q *SyncQueue) Close() {
 	q.cond.L.Lock()
 	if !q.closed {
 		q.closed = true
-		q.cond.Signal()
+		q.cond.Broadcast()
 	}
 	q.cond.L.Unlock()
 }
